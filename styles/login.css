@@ -1,0 +1,13 @@
+* {
+    background-color: rgb(194, 194, 194);
+}
+
+
+.login-page {
+    margin: 10px;
+    padding: 20px;
+}
+
+.image {
+    background-image: url(/images/my-logo.png);
+}
