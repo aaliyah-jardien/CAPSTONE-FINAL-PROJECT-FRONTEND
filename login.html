@@ -8,11 +8,30 @@
     <title>Document</title>
 </head>
 <body>
+  <form action="action" method="post">
     <id class="login-page">
-        <div class="image"></div>
-        <h1 class="login"></h1>
-        <label for="username">Username</label>
-        <input type="text" placeholder="your username"</input>
-    </id>
+      <div class="image"></div>
+      <h1 class="login">Login</h1>
+
+      <label for="username">Username:</label>
+      <input type="text" placeholder="your username"</input>
+
+      <label for="username">Email:</label>
+      <input type="text" placeholder="your email"</input>    
+
+
+      <label for="username">Password</label>
+      <input type="password" placeholder="password"</input id="myInput">
+
+      <!-- An element to toggle between password visibility -->
+      <input type="checkbox" onclick="myFunction()">Show Password 
+
+      <button type="submit">Submit</button>
+      
+      <a href="register.html" class="register">Not Registered?</a>
+      <a href="admin.html" class="admin">Admin user?</a>
+  </id>
+  </form>
+  <script src="./javascript/password.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-+<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="action" method="post">
+        <id class="login-page">
+          <div class="image"></div>
+          <form onsubmit="event.preventDefault(), login()" method="PATCH">
+
+          <h1 class="login">Admin Login</h1>
+
+          <label for="username">Username:</label>
+          <input type="text" name="username" placeholder="your username"</input>
+
+          <label for="username">Email:</label>
+          <input type="text" name="email" placeholder="your email"</input> 
+
+          <label for="username">Password</label>
+          <!-- An element to toggle between password visibility -->
+          <input type="password" name="password" placeholder="password"</input> 
+          <input type="checkbox" Show Password onclick="myFunction()" id="myInput">
+
+          <button type="submit">Submit</button>
+      </id>
+      </form>
+      <script src="./javascript/password.js"></script>
+      <script src="./javascript/login.js"></script>
 </body>
 </html>
