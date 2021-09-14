@@ -6,10 +6,6 @@
   overflow: hidden;
 }
 
-body{
-    
-}
-
 /*  STYLING MY LOGO IMAGE */
 .logo-image {
     display: flex;
@@ -45,8 +41,8 @@ body{
     align-items: center;
     font-size: 70px;
     font-weight: 800;
-    margin-top: 0;
-    margin-bottom: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     /* padding: 0px; */
 }
 
@@ -62,25 +58,22 @@ body{
     -webkit-backdrop-filter: blur( 20px );
     border-radius: 10px;
     border: 15px solid rgba(255, 255, 255, 0.233);
-    width: 55%;
-    height: 5%;
+    width: 45%;
     margin: auto;
-    /* margin-top: 10px; */
 }
-
 
 /* STYLING FOR INPUTS */
 .detail-input {
     display: flex;
     align-items: center;
     background: #fefefe79;
-    border: 1px solid;
+    border: 2.5px solid;
     border-radius: 10px;
     font-size: 20px;
-    width: 60%;
-    height: 30px;
+    width: 55%;
+    height: 20px;
     margin: auto;
-    margin-top: 3px;
+    margin-top: 6px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 5px;
@@ -90,9 +83,13 @@ body{
     text-align: center;
 }
 
-.show-password {
+.fas.fa-eye{
     background: none;
     color:rgb(0, 12, 39);
+}
+
+.fas.fa-eye:hover {
+    color: rgb(255, 255, 255);
 }
 
 /* STYLING THE LOGIN BUTTON */
@@ -100,17 +97,21 @@ body{
     background: none;
 }
 
-.pass {
-    margin-right: auto;
-    background: none;
-    display: flex;
-    align-items: center;
-    width: 60%;
-    height: 30px;
-
-}
-
 /*  STYLING THE LINKS */
 .links {
-    background: none;
+    background: rgb(112, 152, 176);}
+
+.register-link {
+    background: rgb(112, 152, 176);
+    text-decoration: none;
+    margin-right: 100px;
+    color: white;
+}
+
+.admin-link {
+    background: rgb(112, 152, 176); 
+    text-decoration: none;
+    margin-left: 100px;
+    color: white;
+
 }

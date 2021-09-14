@@ -4,45 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/login.css" />
+    <!--MY CSS-->   
+    <link rel="stylesheet" href="/Styles/admin.css" />
+    <!--FONT AWESOME LINK-->
+    <script
+        src="https://kit.fontawesome.com/37b42f3594.js"
+        crossorigin="anonymous"
+    ></script>
+    <!--MY TITLE-->
     <title>Register</title>
 </head>
 <body>
-    <form onsubmit="event.preventDefault(); register()">
-        <id class="register-page">
-          <div class="image"></div>
-          <h1 class="register">Register</h1>
+    <section>
+        <!--REGISTER PAGE-->
+        <img src="Images/my-logo.png" class="logo-image">
+        <h1 class="login-label">Register</h1>
+        <form onsubmit="event.preventDefault(); register()">
+            <id class="register-page">
+                <!--LABELS AND INPUT-->
+                <label for="name">Name:</label>
+                <input id="name" type="text" name="name" placeholder="name"</input>
 
-          <label for="name">Name:</label>
-          <input id="name" type="text" name="name" placeholder="name"</input>
+                <label for="surname">Surname:</label>
+                <input id="surname" type="text" name="surname" placeholder="surname"</input>  
 
-          <label for="surname">Surname:</label>
-          <input id="surname" type="text" name="surname" placeholder="surname"</input>  
+                <label for="dob">Date of Birth:</label>
+                <input id="dob" type="date" name="dob" placeholder="DD/MM/YY"</input>   
 
-          <label for="dob">Date of Birth:</label>
-          <input id="dob" type="date" name="dob" placeholder="DD/MM/YY"</input>   
+                <label for="gender">Gender</label>
+                <input id="gender" type="text" name="gender" placeholder="Male/Female"</input>
 
-          <label for="gender">Gender</label>
-          <input id="gender" type="text" name="gender" placeholder="Male/Female"</input>
+                <label for="email">Email:</label>
+                <input id="email" type="text" name="email" placeholder="your email"</input>
 
-          <label for="email">Email:</label>
-          <input id="email" type="text" name="email" placeholder="your email"</input>
+                <label for="cellphone">Cellphone:</label>
+                <input id="cellphone" type="tel" name="cellphone" placeholder="phone number"</input>
 
-          <label for="cellphone">Cellphone:</label>
-          <input id="cellphone" type="tel" name="cellphone" placeholder="phone number"</input>
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="password" id="myInput"/>
 
-          <label for="password">Password</label>
-          <input type="password" name="password" placeholder="password" id="myInput"/>
+                <!-- An element to toggle between password visibility -->
+                <input type="checkbox" onclick="myFunction()"/>Show Password
 
-          <!-- An element to toggle between password visibility -->
-          <input type="checkbox" onclick="myFunction()"/>Show Password
+                <button type="submit">Submit</button>
+                <!--LINKS FOR DIFFERENT PAGES-->
+                <a href="login.html" class="login">Already Registered?</a>
+                <a href="admin.html" class="admin">Admin user?</a>
+            </id>
+        </form>        
+    </section>
 
-          <button type="submit">Submit</button>
-
-          <a href="login.html" class="login">Already Registered?</a>
-          <a href="admin.html" class="admin">Admin user?</a>
-      </id>
-    </form>
     <!--MY SCRIPTS-->
     <script src="./javascript/password.js"></script>
     <script src="./javascript/register.js"></script>

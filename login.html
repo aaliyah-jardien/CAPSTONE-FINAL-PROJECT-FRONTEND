@@ -4,34 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/login.css" />
-    <title>Document</title>
+    <!--MY CSS-->
+    <link rel="stylesheet" href="/Styles/login.css" />
+    <!--FONT AWESOME LINK-->
+    <script
+        src="https://kit.fontawesome.com/37b42f3594.js"
+        crossorigin="anonymous"
+    ></script>
+    <!--MY TITLE-->
+    <title>Login</title>
 </head>
 <body>
-  <form action="action" method="post">
-    <id class="login-page">
-      <div class="image"></div>
-      <h1 class="login">Login</h1>
+    <section>
+      <!--LOGIN PAGE-->
+      <img src="Images/my-logo.png" class="logo-image">
+        <h1 class="login-label">Login</h1>
 
-      <label for="username">Username:</label>
-      <input type="text" placeholder="your username"</input>
+      <!--FORM CONTAINER-->
+      <form method="post">
+        <div class="container">
+          <input type="text" name="username" class="detail-input" placeholder="Username"</input>
 
-      <label for="username">Email:</label>
-      <input type="text" placeholder="your email"</input>    
+          <input type="text" name="email" class="detail-input" placeholder="Email"</input>    
 
+          <!-- An element to toggle between password visibility -->
+          <input type="password" name="password" class="detail-input" name="password" placeholder="Password" id="myInput"/>
 
-      <label for="username">Password</label>
-      <input type="password" placeholder="password"</input id="myInput">
+          <i class="fas fa-eye" onclick="myFunction()"></i>
 
-      <!-- An element to toggle between password visibility -->
-      <input type="checkbox" onclick="myFunction()">Show Password 
+          <!--BUTTON-->
+          <button type="submit" class="login-button" onclick="login()">Submit</button>
+          
+          <!--LINKS TO OTHER PAGES-->
+          <div class="links">
+            <a href="register.html" class="register-link">Not Registered?</a>
+            <a href="admin.html" class="admin-link">Admin user?</a>
+          </div>
 
-      <button type="submit">Submit</button>
-      
-      <a href="register.html" class="register">Not Registered?</a>
-      <a href="admin.html" class="admin">Admin user?</a>
-  </id>
-  </form>
-  <script src="./javascript/password.js"></script>
+        </div>
+      </form>
+    </section>
+  <!--MY SCRIPTS-->
+  <script src="./Javascript/password.js"></script>
+  <script src="./Javascript/login.js"></script>
+  
 </body>
 </html>

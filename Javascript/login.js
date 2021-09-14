@@ -19,7 +19,7 @@ function login() {
       .then((response) => response.json())
       .then((json) => {
           console.log(json.data);
-          if (json.data.length == 0) {
+          if (data['status_code'] == 401) { 
               alert("Incorrect information")
           }
           else{
