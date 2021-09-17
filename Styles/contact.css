@@ -65,6 +65,53 @@ background-color: rgba(21, 137, 187, 0.541);
 color: #fefefe;
 }
 
+/* STYLING THE BIG BOX */
+.contact-page {
+    display: flex;
+    background: rgba(0, 105, 167, 0.384);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 15px solid rgba(255, 255, 255, 0.233);
+    padding: 20px;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+.contact-input {
+    background: rgb(112, 152, 176);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-top: 50px; */
+    margin-left: auto;
+    padding: 10px;
+}
+
+.btn.btn-primary {
+width: 140%;
+}
+
+.details {
+    background: rgb(112, 152, 176);
+
+}
+
+.contact-details {
+    background: rgb(112, 152, 176);
+
+}
+
+.practice-hours {
+    background: rgb(112, 152, 176);
+}
+
 /* FOOTER STYLING */
 .footer {
 /* position: fixed; */
