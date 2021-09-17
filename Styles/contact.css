@@ -1,0 +1,81 @@
+* {
+    font-family: "poppins", sans-serif;
+    background-color: rgb(182, 182, 182);
+    /* background: rgb(4,23,64);
+    background: linear-gradient(90deg, rgb(8, 25, 63) 0%, rgba(9,90,170,1) 35%, rgba(18,134,203,1) 67%, rgb(10, 201, 185) 88%);  */
+    /* overflow: hidden; */
+    font-weight: 700;
+}
+
+/* BORDER LINE */
+.horizontal-ruler {
+    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+    border-top: 2px solid rgba(0, 0, 0, 0.493);
+    width: 50%;
+}
+
+/*  STYLING MY LOGO IMAGE */
+.logo-image {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-top: 0%;
+    /* padding: o.5%; */
+    filter: grayscale(0%);
+    /* position: absolute; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: 25%;
+    /* height: 100%; */
+    border: none;
+    border-radius: 0px;
+    /* max-width: 50%; */
+    opacity: default;
+}
+
+/* NAV BAR STYLES */
+/* Add a black background color to the top navigation */
+.nav {
+    margin-left: 400px;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    /* background-color: #333; */
+    /* overflow: hidden; */
+}
+  
+/* Style the links inside the navigation bar */
+.nav a {
+float: left;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 20px;
+}
+  
+/* Change the color of links on hover */
+.nav a:hover {
+background-color: rgba(21, 137, 187, 0.541);
+color: #fefefe;
+}
+
+/* FOOTER STYLING */
+.footer {
+/* position: fixed; */
+/* left: 0; */
+bottom: 0;
+width: 100%;
+background-color: rgba(88, 88, 88, 0.534);
+color: black;
+text-align: center;
+}
+
+.footer p {
+background-color: rgba(134, 133, 133, 0.534);
+}

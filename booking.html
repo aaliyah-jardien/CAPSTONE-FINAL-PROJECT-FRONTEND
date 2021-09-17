@@ -4,22 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--STYLES-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!--MY CSS-->
     <link rel="stylesheet" href="/Styles/booking.css" />
     <!--MY TITLE-->
-    <title>Home Page</title>
+    <title>Booking</title>
 </head>
 <body>
     <section>
         <!--MY LOGO-->
+        <img src="Images/my-logo.png" class="logo-image">
         <!--NAV BAR-->
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
+        <hr class="horizontal-ruler">
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </div>
+        <!-- PART ONE -->
+        <div class="book-page">
+            <img
+            src="/Images/map (1).jpg"
+            class="map-img"
+            style="width: 250px; height: 250px"
+            >
+            <!-- BOOKING FORM -->
+            <form action="">
+                <div class="booking">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="First Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Last Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Cellphone" required>
+                    </div>
+                    <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Email address" required>
+                    </div>
+                    <select class="form-select" name="booking" id="service">
+                        <option class="choose" value="fillings">Type of appointment</option>
+                        <option class="choose" value="orthodontics">Orthondontics</option>
+                        <option class="choose" value="teeth-whitening">Teeth Whitening</option>
+                        <option class="choose" value="dentures">Dentures</option>
+                        <option class="choose" value="dental-surgery">Dental Surgery</option>
+                        <option class="choose" value="periodontology">Periodontology</option>
+                        <option class="choose" value="dental-exam">Dental Exam</option>
+                        <input class="btn btn-primary" type="submit" value="Submit">
+                    </select>
+                </div>
+            </form>
+        </div>
     </section>
+    <!--JAVASCRIPT STYLES-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>

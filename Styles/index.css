@@ -7,6 +7,7 @@
     font-weight: 700;
 }
 
+/* BORDER LINE */
 .horizontal-ruler {
   margin: auto;
   margin-right: auto;
@@ -16,6 +17,29 @@
   width: 50%;
 }
 
+/*  STYLING MY LOGO IMAGE */
+.logo-image {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin-top: 0%;
+  /* padding: o.5%; */
+  filter: grayscale(0%);
+  /* position: absolute; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 10px;
+  width: 25%;
+  /* height: 100%; */
+  border: none;
+  border-radius: 0px;
+  /* max-width: 50%; */
+  opacity: default;
+}
+
+/* NAV BAR STYLES */
 /* Add a black background color to the top navigation */
 .nav {
   margin-left: 400px;
@@ -39,28 +63,6 @@
 .nav a:hover {
   background-color: rgba(21, 137, 187, 0.541);
   color: #fefefe;
-}
-
-/*  STYLING MY LOGO IMAGE */
-.logo-image {
-  display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  margin-top: 0%;
-  /* padding: o.5%; */
-  filter: grayscale(0%);
-  /* position: absolute; */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 10px;
-  width: 25%;
-  /* height: 100%; */
-  border: none;
-  border-radius: 0px;
-  /* max-width: 50%; */
-  opacity: default;
 }
 
 .box {
@@ -120,6 +122,5 @@ li {
   } */
 
 
-  @media (max-width: 1250px) {
-
-  }
+/* @media (max-width: 1250px) {
+} */
