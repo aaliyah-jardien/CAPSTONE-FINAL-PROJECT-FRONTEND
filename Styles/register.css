@@ -1,2 +1,119 @@
+ /* STYLING EVERYTHING */
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    background-color: rgb(182, 182, 182);
+    /* background: rgb(4,23,64);
+    background: linear-gradient(90deg, rgb(8, 25, 63) 0%, rgba(9,90,170,1) 35%, rgba(18,134,203,1) 67%, rgb(10, 201, 185) 88%);  */
+    overflow: hidden;
+}
 
-  
+/*  STYLING MY LOGO IMAGE */
+.logo-image {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-top: 0%;
+    /* padding: o.5%; */
+    filter: grayscale(0%);
+    /* position: absolute; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: 30%;
+    /* height: 100%; */
+    border: none;
+    border-radius: 0px;
+    /* max-width: 50%; */
+    opacity: default;
+}
+
+/*   
+.img.logo:hover {
+    box-shadow: royalblue;
+} */
+
+/* STYLING LOGIN LABEL */
+.login-label {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 70px;
+    font-weight: 800;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* padding: 0px; */
+}
+
+/* STYLING THE CONTAINER */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 105, 167, 0.384);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 15px solid rgba(255, 255, 255, 0.233);
+    width: 50%;
+    margin: auto;
+}
+
+/* STYLING FOR INPUTS */
+.detail-input {
+    display: flex;
+    align-items: center;
+    background: #fefefe79;
+    border: 2.5px solid;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 55%;
+    height: 20px;
+    margin: auto;
+    margin-top: 6px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.fas.fa-eye{
+    background: none;
+    color:rgb(0, 12, 39);
+}
+
+.fas.fa-eye:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* STYLING THE LOGIN BUTTON */
+.login-button {
+    background: none;
+}
+
+/*  STYLING THE LINKS */
+.links {
+    background: rgb(112, 152, 176);}
+
+.register-link {
+    background: rgb(112, 152, 176);
+    text-decoration: none;
+    margin-right: 100px;
+    color: white;
+}
+
+.admin-link {
+    background: rgb(112, 152, 176); 
+    text-decoration: none;
+    margin-left: 100px;
+    color: white;
+
+}

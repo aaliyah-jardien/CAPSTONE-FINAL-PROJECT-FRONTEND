@@ -16,24 +16,24 @@
 </head>
 <body>
     <section>
-      <!--LOGIN PAGE-->
+      <!--LOGIN PAGE FOR PATIENTS-->
       <img src="Images/my-logo.png" class="logo-image">
         <h1 class="login-label">Login</h1>
 
       <!--FORM CONTAINER-->
-      <form method="post">
+      <form onsubmit="event.preventDefault(); login()">
         <div class="container">
-          <input type="text" name="username" class="detail-input" placeholder="Username"</input>
+          <!-- <input id="username" type="text" name="username" class="detail-input" placeholder="Username"</input> -->
 
-          <input type="text" name="email" class="detail-input" placeholder="Email"</input>    
+          <input id="email" type="text" name="email" class="detail-input" placeholder="Email"</input>    
 
           <!-- An element to toggle between password visibility -->
-          <input type="password" name="password" class="detail-input" name="password" placeholder="Password" id="myInput"/>
+          <input type="password" name="password" class="detail-input" name="password" placeholder="Password" id="password"/>
 
           <i class="fas fa-eye" onclick="myFunction()"></i>
 
           <!--BUTTON-->
-          <button type="submit" class="login-button" onclick="login()">Submit</button>
+          <button type="submit" class="login-button">Submit</button>
           
           <!--LINKS TO OTHER PAGES-->
           <div class="links">
@@ -46,7 +46,6 @@
     </section>
   <!--MY SCRIPTS-->
   <script src="./Javascript/password.js"></script>
-  <script src="./Javascript/login.js"></script>
-  
+  <script src="./Javascript/p-login.js"></script>
 </body>
 </html>
