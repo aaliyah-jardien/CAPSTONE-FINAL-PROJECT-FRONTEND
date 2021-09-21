@@ -18,36 +18,38 @@
     <section>
         <!--DENTIST LOGIN PAGE FOR ADMIN/DENTIST-->
         <img src="Images/my-logo.png" class="logo-image">
-        <h1 class="login-label">Admin Login</h1>       
+        <h1 class="login-label">Admin Login</h1>      
+        
+        <!-- RETURN LINK TO LANDING PAGE -->
+        <a href="index.html" class="return">Return</a>
+        
         <!--FORM CONTAINER-->
-        <form action="action" method="post">
-            <id class="login-page">
+            <div class="login-page">
               <div class="image"></div>
-              <form onsubmit="event.preventDefault(), login()" method="PATCH">
+              <form onsubmit="event.preventDefault(); login()">
         
               <label for="username">Username:</label>
-              <input type="text" name="username" placeholder="your username"</input>
+              <input id="username" type="text" name="username" placeholder="your username"</input>
     
               <label for="username">Email:</label>
-              <input type="text" name="email" placeholder="your email"</input> 
+              <input id="email" type="text" name="email" placeholder="your email"</input> 
     
               <label for="username">Password</label>
-              <input type="password" name="password" placeholder="password" id="myInput"/> 
-    
+              <input id="password" type="password" name="password" placeholder="password" /> 
+
               <!-- An element to toggle between password visibility -->
-              <input type="checkbox" onclick="myFunction()"/>Show Password 
+              <i class="fas fa-eye" onclick="myFunction()"></i>
     
               <button type="submit">Submit</button>
+              </form>
   
               <!--LINKS TO OTHER PAGES-->
-              <a href="register.html" class="login">Not Registered?</a>
-              <a href="login.html" class="admin">Login user?</a>
-          </id>
-          </form>
+              <a href="admin-register.html" class="login">Not Registered?</a>
+              </div>
     </section>
 
       <!--MY SCRIPTS-->
-      <script src="./javascript/password.js"></script>
-      <script src="./javascript/login.js"></script>
+      <script src="./Javascript/password.js"></script>
+      <script src="./Javascript/a-login.js"></script>
 </body>
 </html>

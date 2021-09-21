@@ -19,7 +19,7 @@ function login() {
         if(user){
           alert("Successfully Logged In")
           localStorage.setItem("user", JSON.stringify(user))
-          window.location.href = "index.html";
+          window.location.href = "./home.html";
         } else {
           alert("No user found")
         }

@@ -27,5 +27,5 @@ fetch("https://aaliyahs-dentistry.herokuapp.com/register-patient/", {
   .then((response) => response.json())
   .then((json) => console.log(json));
   alert('Registered Patient Successfully')
-  window.location = './login.html'
+  window.location = './patient-login.html'
 }

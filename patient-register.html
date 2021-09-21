@@ -18,7 +18,11 @@
     <section>
         <!--REGISTER PAGE FOR PATIENTS-->
         <img src="Images/my-logo.png" class="logo-image">
-        <h1 class="login-label">Register</h1>
+        <h1 class="login-label">Patient Register</h1>
+
+        <!-- RETURN LINK TO LANDING PAGE -->
+        <a href="index.html" class="return">Return</a>
+
         <form onsubmit="event.preventDefault(); register()">
             <id class="container">
                 <!--LABELS AND INPUT-->
@@ -29,24 +33,21 @@
                 <input id="email" type="text" name="email" placeholder="Your email"</input>
                 <input id="cellphone" type="tel" name="cellphone" placeholder="Cellphone number"</input>
 
-                <label for="password">Password</label>
                 <input type="password" name="password" placeholder="password" id="password"/>
-
                 <!-- An element to toggle between password visibility -->
-                <input type="checkbox" onclick="myFunction()"/>Show Password
+                <i class="fas fa-eye" onclick="myFunction()"></i>
 
                 <button type="submit">Submit</button>
 
                 <!--LINKS FOR DIFFERENT PAGES-->
                 <div class="links">
-                    <a href="login.html" class="login">Already Registered?</a>
-                    <a href="welcome.html" class="welcome">Return to home</a>
+                    <a href="patient-login.html" class="login">Already Registered?</a>
                 </div>
             </id>
         </form>        
     </section>
     <!--MY SCRIPTS-->
-    <script src="./javascript/password.js"></script>
+    <script src="./Javascript/password.js"></script>
     <script src="/Javascript/p-register.js"></script>
     <!-- <script src="/Javascript/a-register.js"></script> -->
 </body>

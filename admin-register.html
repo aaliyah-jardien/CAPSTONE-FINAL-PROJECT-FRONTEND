@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--MY CSS-->   
+    <link rel="stylesheet" href="/Styles/register.css" />
+    <!--FONT AWESOME LINK-->
+    <script
+        src="https://kit.fontawesome.com/37b42f3594.js"
+        crossorigin="anonymous"
+    ></script>
+    <!--MY TITLE-->
+    <title>Admin-Register</title>
+</head>
+<body>
+    <section>
+        <!--REGISTER PAGE FOR PATIENTS-->
+        <img src="Images/my-logo.png" class="logo-image">
+        <h1 class="login-label">Admin Register</h1>
+
+        <!-- RETURN LINK TO LANDING PAGE -->
+        <a href="index.html" class="return">Return Home</a>
+
+        <form onsubmit="event.preventDefault(); register()">
+            <id class="container">
+                <!--LABELS AND INPUT-->
+                <input id="name" type="text" name="name" placeholder="Name">
+                <input id="surname" type="text" name="surname" placeholder="Surname">  
+                <input id="email" type="text" name="email" placeholder="Email address">
+                <input id="username" type="tel" name="username" placeholder="username">
+
+                <!-- PASSWORD -->
+                <input type="password" name="password" placeholder="password" id="password"/>
+
+                <!-- An element to toggle between password visibility -->
+                <i class="fas fa-eye" onclick="myFunction()"></i>
+
+                <button type="submit">Submit</button>
+
+                <!--LINKS FOR DIFFERENT PAGES-->
+                <div class="links">
+                    <a href="patient-login.html" class="login">Already Registered?</a>
+                </div>
+            </id>
+        </form>        
+    </section>
+    <!--MY SCRIPTS-->
+    <script src="./Javascript/password.js"></script>
+    <script src="/Javascript/a-register.js"></script>
+    <!-- <script src="/Javascript/a-register.js"></script> -->
+</body>
+</html>

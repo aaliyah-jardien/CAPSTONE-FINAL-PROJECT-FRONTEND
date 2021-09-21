@@ -15,10 +15,17 @@
     <section>
         <!--MY LOGO-->
         <img src="Images/my-logo.png" class="logo-image">
+
+        <!-- RETURN LINK TO LANDING PAGE -->
+        <a href="index.html" class="return">Return</a>
+
+        <!-- LOGOUT -->
+        <a href class="logout" onclick="logout()">Logout</a>
+        
         <!--NAV BAR-->
         <hr class="horizontal-ruler">
         <div class="nav">
-            <a href="index.html">Home</a>
+            <a href="home.html">Home</a>
             <a href="services.html">Services</a>
             <a href="booking.html">Booking</a>
             <a href="contact.html">Contact</a>
@@ -31,21 +38,21 @@
             style="width: 250px; height: 250px"
             >
             <!-- BOOKING FORM -->
-            <form action="">
+            <form onsubmit="event.preventDefault(); appointment()">
                 <div class="booking">
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="First Name" required>
+                        <input type="text" id="name" class="form-control" placeholder="First Name" required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Last Name" required>
+                        <input type="text" id="surname" class="form-control" placeholder="Last Name" required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Cellphone" required>
+                        <input type="text" id="email" class="form-control" placeholder="Email Address" required>
                     </div>
                     <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Email address" required>
+                    <input type="text" id="cellphone" class="form-control" placeholder="Cellphone" required>
                     </div>
-                    <select class="form-select" name="booking" id="service">
+                    <select class="form-select mb-3" name="booking" id="service">
                         <option class="choose" value="fillings">Type of appointment</option>
                         <option class="choose" value="orthodontics">Orthondontics</option>
                         <option class="choose" value="teeth-whitening">Teeth Whitening</option>
@@ -53,12 +60,18 @@
                         <option class="choose" value="dental-surgery">Dental Surgery</option>
                         <option class="choose" value="periodontology">Periodontology</option>
                         <option class="choose" value="dental-exam">Dental Exam</option>
-                        <input class="btn btn-primary" type="submit" value="Submit">
                     </select>
+                    <div class="mb-3">
+                        <input type="date" id="date" class="form-control" placeholder="Booking Date" required>
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Submit">
                 </div>
             </form>
         </div>
     </section>
+    <!-- SCRIPTS -->
+    <script src="./Javascript/booking.js"></script>
+    <script src="./Javascript/logout.js"></script>
     <!--JAVASCRIPT STYLES-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>

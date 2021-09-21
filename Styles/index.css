@@ -1,10 +1,11 @@
+/* STYLING EVERYTHING */
 * {
-    font-family: "poppins", sans-serif;
-    background-color: rgb(182, 182, 182);
-    /* background: rgb(4,23,64);
-    background: linear-gradient(90deg, rgb(8, 25, 63) 0%, rgba(9,90,170,1) 35%, rgba(18,134,203,1) 67%, rgb(10, 201, 185) 88%);  */
-    overflow: hidden;
-    font-weight: 700;
+  font-family: "poppins", sans-serif;
+  background-color: rgb(182, 182, 182);
+  /* background: rgb(4,23,64);
+  background: linear-gradient(90deg, rgb(8, 25, 63) 0%, rgba(9,90,170,1) 35%, rgba(18,134,203,1) 67%, rgb(10, 201, 185) 88%);  */
+  overflow: hidden;
+  font-weight: 700;
 }
 
 /* BORDER LINE */
@@ -65,22 +66,46 @@
   color: #fefefe;
 }
 
+/* WHOLE BOX STYLES */
 .box {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.cover-image {
-  width: 18%;
-  margin: 20px;
-  margin-left: 350px;
+/* WELCOME HEADING STYLES */
+.glow {
+  font-size: 80px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: black;
+  text-align: center;
+  animation: glow s ease-in-out infinite alternate;
 }
 
-.title {
-  font-size: 60px;
-  margin-top: 5%;
-  margin-left: 3%;
+/* @-webkit-keyframes glow {
+from {
+  text-shadow: 0 0 10px #fefefe, 0 0 20px turquoise, 0 0 30px rgb(0, 153, 255), 0 0 40px blue, 0 0 50px navy, 0 0 60px #0d6efd, 0 0 70px #0d6efd;
 }
 
+to {
+  text-shadow: 0 0 20px #fefefe, 0 0 30px turquoise, 0 0 40px rgb(0, 140, 255), 0 0 50px blue, 0 0 60px navy, 0 0 70px #0d6efd, 0 0 80px #0d6efd;
+}
+} */
+
+/* LINKS STYLES */
+.links {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 30px;
+  margin-top: 15px;
+  padding: 0px;
+  color:rgb(11, 123, 228);
+  font-style: italic;
+}
+
+/* FOOTER STYLES */
 .footer {
   position: fixed;
   /* left: 0; */
@@ -90,6 +115,7 @@
   color: black;
   text-align: center;
 }
+
 .footer p {
   background-color: rgba(134, 133, 133, 0.534);
 }

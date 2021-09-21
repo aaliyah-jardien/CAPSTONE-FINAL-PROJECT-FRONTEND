@@ -1,13 +1,10 @@
-
 function login() {
-    let username = document.getElementById("Name").value;
     let email = document.getElementById("Email").value;
     let password = document.getElementById("Password").value;
 
     fetch("https://aaliyahs-dentistry.herokuapp.com/dentist-login/", {
       method: "PATCH",
       body: JSON.stringify({
-        username: username,
         email: email,
         password: password,
     }),
